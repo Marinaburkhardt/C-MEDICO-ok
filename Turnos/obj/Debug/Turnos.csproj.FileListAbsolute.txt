@@ -1,0 +1,318 @@
+F:\Centro Medico\Turnos\bin\ApplicationInsights.config
+F:\Centro Medico\Turnos\bin\Turnos.dll.config
+F:\Centro Medico\Turnos\bin\Turnos.dll
+F:\Centro Medico\Turnos\bin\Turnos.pdb
+F:\Centro Medico\Turnos\bin\roslyn\csc.exe
+F:\Centro Medico\Turnos\bin\roslyn\csc.exe.config
+F:\Centro Medico\Turnos\bin\roslyn\csc.rsp
+F:\Centro Medico\Turnos\bin\roslyn\csi.exe
+F:\Centro Medico\Turnos\bin\roslyn\csi.exe.config
+F:\Centro Medico\Turnos\bin\roslyn\csi.rsp
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Centro Medico\Turnos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Centro Medico\Turnos\bin\roslyn\System.AppContext.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Collections.Immutable.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Console.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.IO.Compression.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.IO.FileSystem.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.IO.Pipes.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Reflection.Metadata.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Security.AccessControl.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Security.Claims.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Security.Principal.Windows.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.ValueTuple.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Xml.XPath.dll
+F:\Centro Medico\Turnos\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Centro Medico\Turnos\bin\roslyn\vbc.exe
+F:\Centro Medico\Turnos\bin\roslyn\vbc.exe.config
+F:\Centro Medico\Turnos\bin\roslyn\vbc.rsp
+F:\Centro Medico\Turnos\bin\roslyn\VBCSCompiler.exe
+F:\Centro Medico\Turnos\bin\roslyn\VBCSCompiler.exe.config
+F:\Centro Medico\Turnos\bin\Antlr3.Runtime.dll
+F:\Centro Medico\Turnos\bin\EntityFramework.dll
+F:\Centro Medico\Turnos\bin\EntityFramework.SqlServer.dll
+F:\Centro Medico\Turnos\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Centro Medico\Turnos\bin\Microsoft.AI.DependencyCollector.dll
+F:\Centro Medico\Turnos\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Centro Medico\Turnos\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Centro Medico\Turnos\bin\Microsoft.AI.Web.dll
+F:\Centro Medico\Turnos\bin\Microsoft.AI.WindowsServer.dll
+F:\Centro Medico\Turnos\bin\Microsoft.ApplicationInsights.dll
+F:\Centro Medico\Turnos\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+F:\Centro Medico\Turnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Centro Medico\Turnos\bin\Microsoft.Web.Infrastructure.dll
+F:\Centro Medico\Turnos\bin\Newtonsoft.Json.dll
+F:\Centro Medico\Turnos\bin\System.Diagnostics.DiagnosticSource.dll
+F:\Centro Medico\Turnos\bin\System.Web.Helpers.dll
+F:\Centro Medico\Turnos\bin\System.Web.Mvc.dll
+F:\Centro Medico\Turnos\bin\System.Web.Optimization.dll
+F:\Centro Medico\Turnos\bin\System.Web.Razor.dll
+F:\Centro Medico\Turnos\bin\System.Web.WebPages.Deployment.dll
+F:\Centro Medico\Turnos\bin\System.Web.WebPages.dll
+F:\Centro Medico\Turnos\bin\System.Web.WebPages.Razor.dll
+F:\Centro Medico\Turnos\bin\WebGrease.dll
+F:\Centro Medico\Turnos\bin\EntityFramework.xml
+F:\Centro Medico\Turnos\bin\EntityFramework.SqlServer.xml
+F:\Centro Medico\Turnos\bin\System.Web.Helpers.xml
+F:\Centro Medico\Turnos\bin\System.Web.Mvc.xml
+F:\Centro Medico\Turnos\bin\System.Web.Optimization.xml
+F:\Centro Medico\Turnos\bin\System.Web.Razor.xml
+F:\Centro Medico\Turnos\bin\System.Web.WebPages.xml
+F:\Centro Medico\Turnos\bin\System.Web.WebPages.Deployment.xml
+F:\Centro Medico\Turnos\bin\System.Web.WebPages.Razor.xml
+F:\Centro Medico\Turnos\bin\Newtonsoft.Json.xml
+F:\Centro Medico\Turnos\bin\Antlr3.Runtime.pdb
+F:\Centro Medico\Turnos\bin\System.Diagnostics.DiagnosticSource.xml
+F:\Centro Medico\Turnos\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+F:\Centro Medico\Turnos\bin\Microsoft.AI.DependencyCollector.xml
+F:\Centro Medico\Turnos\bin\Microsoft.AI.WindowsServer.xml
+F:\Centro Medico\Turnos\bin\Microsoft.AI.Web.xml
+F:\Centro Medico\Turnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Centro Medico\Turnos\bin\es\System.Web.Helpers.resources.dll
+F:\Centro Medico\Turnos\bin\es\System.Web.Mvc.resources.dll
+F:\Centro Medico\Turnos\bin\es\System.Web.Optimization.resources.dll
+F:\Centro Medico\Turnos\bin\es\System.Web.Razor.resources.dll
+F:\Centro Medico\Turnos\bin\es\System.Web.WebPages.resources.dll
+F:\Centro Medico\Turnos\bin\es\System.Web.WebPages.Deployment.resources.dll
+F:\Centro Medico\Turnos\bin\es\System.Web.WebPages.Razor.resources.dll
+F:\Centro Medico\Turnos\obj\Debug\Turnos.csprojAssemblyReference.cache
+F:\Centro Medico\Turnos\obj\Debug\Turnos.csproj.CoreCompileInputs.cache
+F:\Centro Medico\Turnos\obj\Debug\Turnos.csproj.CopyComplete
+F:\Centro Medico\Turnos\obj\Debug\Turnos.dll
+F:\Centro Medico\Turnos\obj\Debug\Turnos.pdb
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\ApplicationInsights.config
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Turnos.dll.config
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Turnos.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Turnos.pdb
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\csc.exe
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\csc.exe.config
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\csc.rsp
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\csi.exe
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\csi.exe.config
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\csi.rsp
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.AppContext.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Console.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.IO.Compression.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.IO.Pipes.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Security.Claims.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.ValueTuple.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Xml.XPath.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\vbc.exe
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\vbc.exe.config
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\vbc.rsp
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\VBCSCompiler.exe
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Antlr3.Runtime.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\EntityFramework.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\EntityFramework.SqlServer.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.Web.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.ApplicationInsights.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Newtonsoft.Json.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Helpers.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Mvc.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Optimization.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Razor.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.WebPages.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.WebPages.Razor.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\WebGrease.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\EntityFramework.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\EntityFramework.SqlServer.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Helpers.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Mvc.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Optimization.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Razor.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.WebPages.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.WebPages.Razor.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Newtonsoft.Json.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Antlr3.Runtime.pdb
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.AI.Web.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\es\System.Web.Helpers.resources.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\es\System.Web.Mvc.resources.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\es\System.Web.Optimization.resources.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\es\System.Web.Razor.resources.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\es\System.Web.WebPages.resources.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\obj\Debug\Turnos.csproj.CoreCompileInputs.cache
+C:\Users\32852742\Desktop\Centro Medico\Turnos\obj\Debug\Turnos.csproj.CopyComplete
+C:\Users\32852742\Desktop\Centro Medico\Turnos\obj\Debug\Turnos.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\obj\Debug\Turnos.pdb
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\ApplicationInsights.config
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Turnos.dll.config
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Turnos.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Turnos.pdb
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\csc.exe
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\csc.exe.config
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\csc.rsp
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\csi.exe
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\csi.exe.config
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\csi.rsp
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.AppContext.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Console.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.IO.Compression.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.IO.Pipes.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Security.Claims.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.ValueTuple.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Xml.XPath.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\vbc.exe
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\vbc.exe.config
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\vbc.rsp
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\VBCSCompiler.exe
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Antlr3.Runtime.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\EntityFramework.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\EntityFramework.SqlServer.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.Web.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.ApplicationInsights.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Newtonsoft.Json.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Net.Http.Formatting.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Helpers.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Http.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Http.WebHost.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Mvc.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Optimization.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Razor.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.WebPages.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.WebPages.Razor.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\WebGrease.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\EntityFramework.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\EntityFramework.SqlServer.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Net.Http.Formatting.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Http.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Http.WebHost.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Helpers.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Mvc.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Optimization.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.Razor.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.WebPages.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Web.WebPages.Razor.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Newtonsoft.Json.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Antlr3.Runtime.pdb
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.AI.Web.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\es\System.Web.Helpers.resources.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\es\System.Web.Mvc.resources.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\es\System.Web.Optimization.resources.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\es\System.Web.Razor.resources.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\es\System.Web.WebPages.resources.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\obj\Debug\Turnos.csprojAssemblyReference.cache
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\obj\Debug\Turnos.csproj.CoreCompileInputs.cache
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\obj\Debug\Turnos.csproj.CopyComplete
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\obj\Debug\Turnos.dll
+C:\Users\32852742\Desktop\Nueva carpeta\Centro Medico\Turnos\obj\Debug\Turnos.pdb
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Net.Http.Formatting.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Http.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Http.WebHost.dll
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Net.Http.Formatting.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Http.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\bin\System.Web.Http.WebHost.xml
+C:\Users\32852742\Desktop\Centro Medico\Turnos\obj\Debug\Turnos.csprojAssemblyReference.cache

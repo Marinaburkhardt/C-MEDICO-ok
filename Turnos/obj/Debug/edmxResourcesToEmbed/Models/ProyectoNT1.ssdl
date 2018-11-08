@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoNT1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="obraSocial">
+    <Key>
+      <PropertyRef Name="idObraSocial" />
+    </Key>
+    <Property Name="idObraSocial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="paciente">
+    <Key>
+      <PropertyRef Name="idPaciente" />
+    </Key>
+    <Property Name="idPaciente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="apellido" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="dni" Type="numeric" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="telefono" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="mail" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="idObraSocial" Type="int" Nullable="false" />
+    <Property Name="sexo" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="profesional">
+    <Key>
+      <PropertyRef Name="idProfesional" />
+    </Key>
+    <Property Name="idProfesional" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dni" Type="numeric" Precision="8" Scale="0" Nullable="false" />
+    <Property Name="telefono" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="mail" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="matricula" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="turno">
+    <Key>
+      <PropertyRef Name="idPaciente" />
+      <PropertyRef Name="idProfesional" />
+      <PropertyRef Name="fecha" />
+    </Key>
+    <Property Name="idPaciente" Type="int" Nullable="false" />
+    <Property Name="idProfesional" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_paciente_obraSocial1">
+    <End Role="obraSocial" Type="Self.obraSocial" Multiplicity="1" />
+    <End Role="paciente" Type="Self.paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="obraSocial">
+        <PropertyRef Name="idObraSocial" />
+      </Principal>
+      <Dependent Role="paciente">
+        <PropertyRef Name="idObraSocial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_turno_paciente">
+    <End Role="paciente" Type="Self.paciente" Multiplicity="1" />
+    <End Role="turno" Type="Self.turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paciente">
+        <PropertyRef Name="idPaciente" />
+      </Principal>
+      <Dependent Role="turno">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_turno_profesional1">
+    <End Role="profesional" Type="Self.profesional" Multiplicity="1" />
+    <End Role="turno" Type="Self.turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="profesional">
+        <PropertyRef Name="idProfesional" />
+      </Principal>
+      <Dependent Role="turno">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProyectoNT1ModelStoreContainer">
+    <EntitySet Name="obraSocial" EntityType="Self.obraSocial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="paciente" EntityType="Self.paciente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="profesional" EntityType="Self.profesional" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="turno" EntityType="Self.turno" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_paciente_obraSocial1" Association="Self.FK_paciente_obraSocial1">
+      <End Role="obraSocial" EntitySet="obraSocial" />
+      <End Role="paciente" EntitySet="paciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_turno_paciente" Association="Self.FK_turno_paciente">
+      <End Role="paciente" EntitySet="paciente" />
+      <End Role="turno" EntitySet="turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_turno_profesional1" Association="Self.FK_turno_profesional1">
+      <End Role="profesional" EntitySet="profesional" />
+      <End Role="turno" EntitySet="turno" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

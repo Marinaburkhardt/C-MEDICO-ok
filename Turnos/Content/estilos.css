@@ -1,0 +1,33 @@
+body {
+	background: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.Titulo {
+	color: #262a34;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 60px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.form-group-titulos {
+	color: #262a34;
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.form-group-fotos {
+	text-align: center;
+}
+
+/* input:valid, textarea:valid {
+  border:2px solid green;
+}
+input:invalid, textarea:invalid {
+  border:2px solid red;
+} */

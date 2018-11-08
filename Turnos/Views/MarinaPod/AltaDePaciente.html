@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios Alta de Paciente</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<div class="Titulo">Alta de Paciente</div>
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col">
+				<form action="">
+					<div class="form-group row">
+						<div class="col-12 col-md-6 mb-3">
+							<label for="nombre">Nombre*</label>
+							<!-- Campo obligatorio, solo letras, max 30 caracteres con mensaje de error -->
+							<input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre" required pattern="[A-Za-z]{2,30}" title="Ingrese solo letras, entre 2 y 30 caracteres">
+						</div>
+						<div class="col-12 col-md-6 mb-3">
+							<label for="pass">Apellido*</label>
+							<!-- Campo obligatorio, solo letras, max 30 caracteres con mensaje de error -->
+							<input type="apellido" class="form-control" placeholder="Apellido" name="apellido" id="apellido" maxlength="30" required pattern="[A-Za-z]{2,30}" title="Ingrese solo letras, entre 2 y 30 caracteres">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-12 col-md-6 mb-3">
+							<label for="dni">DNI*</label>
+							<!-- Campo obligatorio, solo numeros, entre 7 y 8 caracteres con mensaje de error -->
+							<input type="text" class="form-control" placeholder="DNI" name="dni" id="dni" required pattern="[0-9]{7,8}" title="Ingrese un DNI válido">
+						</div>
+						<div class="col-12 col-md-6 mb-3">
+							<label for="telefono">Teléfono</label>
+							<!-- No es campo obligatorio, la base acepta nulls -->
+							<input type="number" class="form-control" placeholder="Teléfono" name="telefono" id="telefono" pattern="[0-9]{6,14}" title="Ingrese solo números">
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-12 col-md-6 mb-3">
+							<label for="email">Email*</label>
+							<!-- Campo obligatorio, se aceptan numeros y letras, max 40 caracteres -->
+							<input type="email" class="form-control" placeholder="Email" name="email" id="email" maxlength="40" required>
+						</div>
+						<div class="col-12 col-md-6 mb-3">
+							<label for="obraSocial">Obra social*</label>
+							<!-- Cambiar los values a los id que corresponde para que pueda persistir en la DB -->
+							<select  required name="obraSocial" id="obraSocial" class="form-control">
+								<option disabled selected value="">Elija una opción</option>
+								<option value="osde">OSDE</option>
+								<option value="swissMedical">Swiss Medical</option>
+								<option value="omint">OMINT</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-12 col-md-3 mb-3">
+							<label>Sexo*</label>
+							<!-- Campo obligatorio -->
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="radio" name="sexo" id="hombre" class="form-check-input mr-2" required>Hombre
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="radio" name="sexo" id="mujer" class="form-check-input mr-2">Mujer
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-12 text-center">
+							<div class="row justify-content-center">
+								<div class="col-12 col-sm-9 col-md-4">
+									<button class="btn btn-primary btn-block" type="submit">Dar de alta paciente</button>
+								</div>
+								<div class="col-12 col-sm-9 col-md-2">
+									<button class="btn btn-danger btn-block" type="submit">Cancelar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<!-- <script src="../js/bootstrap.min.js"></script> -->
+</body>
+</html>
