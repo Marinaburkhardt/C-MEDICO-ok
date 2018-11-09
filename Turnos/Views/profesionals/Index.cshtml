@@ -10,62 +10,68 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/estilos.css">
 </head>
 <body>
+    <div class="Titulo mb-2">Profesionales Médicos</div>
+
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Alta de nuevo profesional", "Create")
     </p>
-    <table class="table">
+    <table class="table text-center">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.nombre)
+                Nombre
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.apellido)
+                Apellido
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dni)
+                DNI
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.telefono)
+                Teléfono
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.mail)
+                Mail
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.matricula)
+                Matrícula
             </th>
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.apellido)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dni)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.mail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.matricula)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.idProfesional }) |
-                @Html.ActionLink("Details", "Details", new { id=item.idProfesional }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.idProfesional })
-            </td>
-        </tr>
-    }
-    
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.matricula)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.idProfesional }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.idProfesional }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.idProfesional })
+                </td>
+            </tr>
+        }
+
     </table>
 </body>
 </html>
