@@ -11,62 +11,72 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/estilos.css">
 </head>
 <body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
+    <div class="Titulo mb-2">Pacientes</div>
+
+    <p class="ml-4">
+        @Html.ActionLink("Alta de nuevo paciente", "Create")
     </p>
-    <table class="table">
+    <table class="table text-center">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.nombre)
+                Nombre
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.apellido)
+                Apellido
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.dni)
+                DNI
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.telefono)
+                Teléfono
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.mail)
+                Email
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.obraSocial.nombre)
+                Obra Social
             </th>
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.apellido)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dni)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.mail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.obraSocial.nombre)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.idPaciente }) |
-                @Html.ActionLink("Details", "Details", new { id=item.idPaciente }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.idPaciente })
-            </td>
-        </tr>
-    }
-    
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.obraSocial.nombre)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.idPaciente }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.idPaciente }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.idPaciente })
+                </td>
+            </tr>
+        }
+
     </table>
+
+    <div>
+        @Html.ActionLink("Volver al Menú Principal", "MenuPrincipal")
+    </div>
+
 </body>
 </html>

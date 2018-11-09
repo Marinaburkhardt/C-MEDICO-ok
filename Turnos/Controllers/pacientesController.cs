@@ -14,6 +14,13 @@ namespace Turnos.Controllers
     {
         private ProyectoNT1Entities1 db = new ProyectoNT1Entities1();
 
+        // Volver al menú principal
+        public ActionResult MenuPrincipal()
+        {
+            //HAY QUE HACER Q DEVUELVA LA VISTA HOME.INDEX
+            return View();
+        }
+
         // GET: pacientes
         public ActionResult Index()
         {
