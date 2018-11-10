@@ -1,0 +1,6 @@
+Cosas para acomodar/arreglar
+
+- los botones de cancelar no cancelan sino que guardan el cambio igual
+- redirreccionamiento del index de cada clase al index del home
+- sacar los action link y cambiarlos x boones
+- redirección de los iconos de home a las vistas correspondientes
