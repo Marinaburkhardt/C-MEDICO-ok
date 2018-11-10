@@ -89,7 +89,7 @@
                             <button class="btn btn-primary btn-block" type="submit">Dar de alta paciente</button>
                         </div>
                         <div class="col-12 col-sm-9 col-md-2">
-                            <button class="btn btn-danger btn-block" type="submit">Cancelar</button>
+                            <input class="btn btn-grey btn-block" type="button" name="cancel" value="Cancel" onClick="window.location='/pacientes';" />
                         </div>
                     </div>
                 </div>
@@ -99,11 +99,10 @@
 
     }
 
-        <div>
+    @Html.ActionLink("Back to List", "Index")
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
 
-            @Html.ActionLink("Back to List", "Index")
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-            <!-- <script src="../js/bootstrap.min.js"></script> -->
 </body>
 </html>

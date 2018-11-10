@@ -23,71 +23,75 @@
     {
         @Html.AntiForgeryToken()
 
-        <div class="container">
-            <div class="Titulo">Editar Paciente</div>
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            @Html.HiddenFor(model => model.idPaciente)
+    <div class="container">
+        <div class="Titulo">Editar Paciente</div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.idPaciente)
 
-            <div class="form-group row ">
-                <div class="col-12 col-md-6 mb-3">
-                    <label>Nombre*</label>
-                    @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                    <label>Apellido*</label>
-                    @Html.EditorFor(model => model.apellido, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.apellido, "", new { @class = "text-danger" })
-                </div>
+        <div class="form-group row ">
+            <div class="col-12 col-md-6 mb-3">
+                <label>Nombre*</label>
+                @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
             </div>
-
-            <div class="form-group row">
-                <div class="col-12 col-md-6 mb-3">
-                    <label>DNI*</label>
-                    @Html.EditorFor(model => model.dni, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.dni, "", new { @class = "text-danger" })
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                    <label>Teléfono</label>
-                    @Html.EditorFor(model => model.telefono, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.telefono, "", new { @class = "text-danger" })
-                </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label>Apellido*</label>
+                @Html.EditorFor(model => model.apellido, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.apellido, "", new { @class = "text-danger" })
             </div>
-
-            <div class="form-group row">
-                <div class="col-12 col-md-6 mb-3">
-                    <label>Mail*</label>
-                    @Html.EditorFor(model => model.mail, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.mail, "", new { @class = "text-danger" })
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                    <label>Obra Social*</label>
-                    @Html.DropDownList("idObraSocial", null, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.idObraSocial, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="col-12 col-md-3 mb-3">
-                    <label>Sexo*</label>
-                    @*@Html.EditorFor(model =>model.Gender)*@
-                    @Html.RadioButtonFor(model => model.sexo, "Hombre", true) Hombre
-                    @Html.RadioButtonFor(model => model.sexo, "Mujer", false) Mujer
-                    @Html.ValidationMessageFor(model => model.sexo)<br />
-                </div>
-            </div>
-
-            <div class="form-group row justify-content-center">
-                <div class="col-12 text-center">
-                    <input type="submit" value="Guardar cambios" class="btn btn-primary" />
-                </div>
-            </div>
-
         </div>
+
+        <div class="form-group row">
+            <div class="col-12 col-md-6 mb-3">
+                <label>DNI*</label>
+                @Html.EditorFor(model => model.dni, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.dni, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label>Teléfono</label>
+                @Html.EditorFor(model => model.telefono, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.telefono, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-12 col-md-6 mb-3">
+                <label>Mail*</label>
+                @Html.EditorFor(model => model.mail, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.mail, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label>Obra Social*</label>
+                @Html.DropDownList("idObraSocial", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.idObraSocial, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-12 col-md-3 mb-3">
+                <label>Sexo*</label>
+                @*@Html.EditorFor(model =>model.Gender)*@
+                @Html.RadioButtonFor(model => model.sexo, "Hombre", true) Hombre
+                @Html.RadioButtonFor(model => model.sexo, "Mujer", false) Mujer
+                @Html.ValidationMessageFor(model => model.sexo)<br />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-12 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-9 col-md-4">
+                        <input type="submit" value="Guardar cambios" class="btn btn-primary" />
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-2">
+                        <input class="btn btn-grey" type="button" name="cancel" value="Cancel" onClick="window.location='/pacientes';" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     }
 
-    <div>
-        @Html.ActionLink("Back to List", "Index")
-    </div>
 </body>
 </html>
