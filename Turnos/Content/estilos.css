@@ -1,7 +1,17 @@
 body {
 	background: #f2f2f2;
 	font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+    font-size: 16px;
+}
+
+.Titulo-Principal {
+    color: #262a34;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .Titulo {
@@ -23,6 +33,31 @@ body {
 
 .form-group-fotos {
 	text-align: center;
+}
+
+/*.card {
+    align-items: center;
+}*/
+
+.card .foto {
+    margin-top: 20px;
+    /*margin-left: 60px;*/
+    display: inline-block;
+    align-items: center;
+    align-self: center;
+}
+
+.card .foto .img {
+    width: 200%;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    font-size: large;
 }
 
 /* input:valid, textarea:valid {

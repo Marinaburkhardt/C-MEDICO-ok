@@ -1,17 +1,49 @@
-﻿
-    <div class="row mt-3">
+﻿<div class="container">
+    <div class="row">
         <div class="col">
-            <div class="form-group-titulos row justify-content-around">
-                <div class="col-4">Pacientes</div>
-                <div class="col-4">Profesionales Médicos</div>
-                <div class="col-4">Agenda</div>
-            </div>
 
-            <div class="form-group-fotos row">
-                <div class="col-4"><img src="img/pacientes.png">@Html.ActionLink("obrasociales", "Index", "obrasocials")</div>
-                <div class="col-4"><img src="img/medico.png"></div>
-                <div class="col-4"><img src="img/agenda2.png"></div>
+            <div class="card-group">
+                <div class="card">
+                    <div class="foto">
+                        <img src="img/pacientes.png" class="card-image-top img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Pacientes</h1>
+                        <button class="btn btn-primary btn-block">Ir</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Alta/Baja/Modificación/Listado</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="foto">
+                        <img src="img/medico.png" class="card-image-top img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Profesionales Médicos</h1>
+                        <button class="btn btn-primary btn-block">Ir</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Alta/Baja/Modificación/Listado</small>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="foto">
+                        <img src="img/agenda2.png" class="card-image-top img-fluid" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Agenda</h1>
+                        <button class="btn btn-primary btn-block">Ir</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Alta/Baja/Modificación/Listado</small>
+                    </div>
+                </div>
+
             </div>
 
         </div>
     </div>
+</div>
