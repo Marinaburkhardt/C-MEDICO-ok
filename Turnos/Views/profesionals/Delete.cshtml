@@ -10,69 +10,57 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Delete</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/estilos.css">
 </head>
 <body>
-    <h3>Are you sure you want to delete this?</h3>
-    <div>
-        <h4>profesional</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.nombre)
-            </dt>
-    
-            <dd>
+
+    <div class="container text-center">
+        <div class="Titulo">Seguro desea eliminar este profesional?</div>
+
+        <div class="form-group row ">
+            <div class="col-12 col-md-6 mb-3">
+                Nombre:
                 @Html.DisplayFor(model => model.nombre)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.apellido)
-            </dt>
-    
-            <dd>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                Apellido:
                 @Html.DisplayFor(model => model.apellido)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.dni)
-            </dt>
-    
-            <dd>
+            </div>
+        </div>
+
+        <div class="form-group row ">
+            <div class="col-12 col-md-6 mb-3">
+                DNI:
                 @Html.DisplayFor(model => model.dni)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.telefono)
-            </dt>
-    
-            <dd>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                Teléfono:
                 @Html.DisplayFor(model => model.telefono)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.mail)
-            </dt>
-    
-            <dd>
+            </div>
+        </div>
+
+        <div class="form-group row ">
+            <div class="col-12 col-md-6 mb-3">
+                Mail:
                 @Html.DisplayFor(model => model.mail)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.matricula)
-            </dt>
-    
-            <dd>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                Matrícula:
                 @Html.DisplayFor(model => model.matricula)
-            </dd>
-    
-        </dl>
-    
-        @using (Html.BeginForm()) {
+            </div>
+        </div>
+        
+
+        @using (Html.BeginForm())
+        {
             @Html.AntiForgeryToken()
-    
+
             <div class="form-actions no-color">
-                <input type="submit" value="Delete" class="btn btn-default" /> |
-                @Html.ActionLink("Back to List", "Index")
+                <input type="submit" value="Eliminar" class="btn btn-danger" />
+                <input type="submit" value="Cancelar" class="btn btn-grey" />
+                <!--@Html.ActionLink("Back to List", "Index")-->
             </div>
         }
     </div>
