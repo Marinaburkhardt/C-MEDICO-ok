@@ -1,6 +1,6 @@
 Cosas para acomodar/arreglar
 
-- los botones de cancelar no cancelan sino que guardan el cambio igual
-- redirreccionamiento del index de cada clase al index del home
-- sacar los action link y cambiarlos x boones
 - redirección de los iconos de home a las vistas correspondientes
+- cambiar los action link de altas x botones
+- falta todo lo que tenga que ver con turnos
+- en la parte de los turnos falta agregar un campo de fecha! está en la base pero no en vs
