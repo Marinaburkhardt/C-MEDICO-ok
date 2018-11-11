@@ -29,13 +29,13 @@
                 <div class="col-12 col-md-6 mb-3">
                     Nombre*
                     <!-- Campo obligatorio, solo letras, max 30 caracteres con mensaje de error -->
-                    @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control", placeholder = "Nombre", required = "required", pattern = @"[A-Za-z]{2,30}", title = "Ingrese solo letras, entre 2 y 30 caracteres" } })
+                    @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control", type="text", placeholder = "Nombre", required = "required", pattern = "[A-Za-z]{2,30}", title = "Ingrese solo letras, entre 2 y 30 caracteres" } })
                     @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                     Apellido*
                     <!-- Campo obligatorio, solo letras, max 30 caracteres con mensaje de error -->
-                    @Html.EditorFor(model => model.apellido, new { htmlAttributes = new { @class = "form-control", placeholder = "Apellido", required = "required", name = "apellido", id = "apellido", maxlength = "30", pattern = "[A-Za-z]{2,30}", title = "Ingrese solo letras, entre 2 y 30 caracteres" } })
+                    @Html.EditorFor(model => model.apellido, new { htmlAttributes = new { @class = "form-control", placeholder = "Apellido", required = "required", name = "apellido", id = "apellido", pattern = "[A-Za-z]{2,30}", title = "Ingrese solo letras, entre 2 y 30 caracteres" } })
                     @Html.ValidationMessageFor(model => model.apellido, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="col-12 col-md-6 mb-3">
                     DNI*
                     <!-- Campo obligatorio, solo numeros, entre 7 y 8 caracteres con mensaje de error -->
-                    @Html.EditorFor(model => model.dni, new { htmlAttributes = new { @class = "form-control", placeholder = "DNI", name = "dni", required = "required", id = "dni", pattern = "[0-9]{7,8}", title = "Ingrese un DNI válido" } })
+                    @Html.EditorFor(model => model.dni, new { htmlAttributes = new { @class = "form-control", placeholder = "DNI", name = "dni", required = "required", id = "dni", minlenght = "7", maxlenght = "8", pattern = "[0-9]", title = "Ingrese un DNI válido" } })
                     @Html.ValidationMessageFor(model => model.dni, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-12 col-md-6 mb-3">
@@ -59,7 +59,7 @@
                 <div class="col-12 col-md-6 mb-3">
                     E-Mail*
                     <!-- Campo obligatorio, se aceptan numeros y letras, max 40 caracteres -->
-                    @Html.EditorFor(model => model.mail, new { htmlAttributes = new { @class = "form-control", placeholder = "Email", name = "email", id = "email", maxlength = "40", required = "required" } })
+                    @Html.EditorFor(model => model.mail, new { htmlAttributes = new { @class = "form-control", type="email", placeholder = "Email", name = "email", id = "email", maxlength = "40", required = "required", title = "Ingrese un mail válido" } })
                     @Html.ValidationMessageFor(model => model.mail, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-12 col-md-6 mb-3">
@@ -99,7 +99,6 @@
 
     }
 
-    @Html.ActionLink("Back to List", "Index")
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!-- <script src="../js/bootstrap.min.js"></script> -->
