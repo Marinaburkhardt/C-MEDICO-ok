@@ -4,3 +4,7 @@ Cosas para acomodar/arreglar
 - cambiar los action link de altas x botones
 - falta todo lo que tenga que ver con turnos
 - en la parte de los turnos falta agregar un campo de fecha! está en la base pero no en vs
+- x alguna razon vs no toma las expresiones regulares para definir solo letras (nombre, apellido...)
+- x alguna razon vs no toma las expresiones regulares para delimitar el max/min del largo del input, ni tampoco funciona max-minlenght
+- arreglar los decimales en los campos de dni
+- arreglar los decimales en los campos de teléfono
