@@ -58,10 +58,12 @@ namespace Turnos.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.idPaciente = new SelectList(db.pacientes, "idPaciente", "nombre", turno.idPaciente);
-            ViewBag.idPaciente = new SelectList(db.profesionals, "idProfesional", "nombre", turno.idPaciente);
+            ViewBag.Pacientes = new SelectList(db.pacientes, "idPaciente", "nombre", turno.idPaciente).AsEnumerable<SelectListItem>();
+            ViewBag.Profesionales = new SelectList(db.profesionals, "idProfesional", "nombre", turno.idProfesional).AsEnumerable<SelectListItem>();
             return View(turno);
         }
+
+        
 
         // GET: turnoes/Edit/5
         public ActionResult Edit(int? id)
