@@ -9,6 +9,7 @@
     <title>Create</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="~/Content/estilos.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
@@ -27,30 +28,31 @@
                 <div class="col-12 col-md-6 mb-3">
                     Paciente*
                     <!-- Campo obligatorio -->
-                    @Html.DropDownList("idPaciente",(IEnumerable<SelectListItem>) ViewBag.Pacientes, htmlAttributes: new { @class = "form-control" })
+                    @Html.DropDownList("idPaciente", (IEnumerable<SelectListItem>)ViewBag.Pacientes, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.idPaciente, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                     Profesional*
                     <!-- Campo obligatorio -->
-                    @Html.DropDownList("idProfesional", (IEnumerable<SelectListItem>) ViewBag.Profesionales, htmlAttributes: new { @class = "form-control"})
+                    @Html.DropDownList("idProfesional", (IEnumerable<SelectListItem>)ViewBag.Profesionales, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.idProfesional, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-12 col-md-6 mb-3">
-                    Día y horario*
                     <!-- Campo obligatorio -->
-                    @Html.EditorFor(model => model.fecha, new { htmlAttributes = new { @class = "form-control" } })
+                    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                    <script>
+                        $(function () {
+                            $("#datepicker").datepicker();
+                        });
+                    </script>
+                    <p>Día y horario*</p><input type="text" id="datepicker">
                     @Html.ValidationMessageFor(model => model.fecha, "", new { @class = "text-danger" })
                 </div>
             </div>
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <script>$( function() {
-						$( "#datepicker" ).datepicker();
-					  } );</script>
-            <p>Date: <input type="text" id="datepicker"></p>
+
             <div class="form-group row">
                 <div class="col-12 text-center">
                     <div class="row justify-content-center">
@@ -66,7 +68,7 @@
         </div>
 
     }
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!-- <script src="../js/bootstrap.min.js"></script> -->
 </body>
