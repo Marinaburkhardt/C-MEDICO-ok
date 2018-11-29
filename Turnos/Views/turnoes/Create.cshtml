@@ -22,50 +22,55 @@
     {
         @Html.AntiForgeryToken()
 
-        <div class="container">
-            <div class="Titulo">Alta de Turno</div>
-            <div class="form-group row">
-                <div class="col-12 col-md-6 mb-3">
-                    Paciente*
-                    <!-- Campo obligatorio -->
-                    @Html.DropDownList("idPaciente", (IEnumerable<SelectListItem>)ViewBag.Pacientes, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.idPaciente, "", new { @class = "text-danger" })
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                    Profesional*
-                    <!-- Campo obligatorio -->
-                    @Html.DropDownList("idProfesional", (IEnumerable<SelectListItem>)ViewBag.Profesionales, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.idProfesional, "", new { @class = "text-danger" })
-                </div>
+    <div class="container">
+        <div class="Titulo">Alta de Turno</div>
+        <div class="form-group row">
+            <div class="col-12 col-md-6 mb-3">
+                Paciente*
+                <!-- Campo obligatorio -->
+                @Html.DropDownList("idPaciente", (IEnumerable<SelectListItem>)ViewBag.Pacientes, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.idPaciente, "", new { @class = "text-danger" })
             </div>
-            <div class="form-group row">
-                <div class="col-12 col-md-6 mb-3">
-                    <!-- Campo obligatorio -->
-                    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                    <script>
-                        $(function () {
-                            $("#datepicker").datepicker();
-                        });
-                    </script>
-                    <p>Día y horario*</p><input type="text" id="datepicker">
-                    @Html.ValidationMessageFor(model => model.fecha, "", new { @class = "text-danger" })
-                </div>
+            <div class="col-12 col-md-6 mb-3">
+                Profesional*
+                <!-- Campo obligatorio -->
+                @Html.DropDownList("idProfesional", (IEnumerable<SelectListItem>)ViewBag.Profesionales, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.idProfesional, "", new { @class = "text-danger" })
             </div>
+        </div>
+        <div class="form-group row text-center">
+            <div class="col-12">
+                <!-- Campo obligatorio -->
+                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script>
+                    $(function () {
+                        $("#datepicker").datepicker();
+                    });
+                </script>
+                <p>Día y horario*</p><input type="text" id="datepicker">
+                @Html.ValidationMessageFor(model => model.fecha, "", new { @class = "text-danger" })
+            </div>
+        </div>
 
-            <div class="form-group row">
-                <div class="col-12 text-center">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-sm-9 col-md-4">
-                            <button class="btn btn-primary btn-block" type="submit">Dar de alta turno</button>
-                        </div>
-                        <div class="col-12 col-sm-9 col-md-2">
-                            <input class="btn btn-grey btn-block" type="button" name="cancel" value="Cancel" onClick="window.location='/turnoes';" />
-                        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="form-group row">
+            <div class="col-12 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-9 col-md-4">
+                        <button class="btn btn-primary btn-block" type="submit">Dar de alta turno</button>
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-2">
+                        <input class="btn btn-grey btn-block" type="button" name="cancel" value="Cancel" onClick="window.location='/turnoes';" />
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     }
 
