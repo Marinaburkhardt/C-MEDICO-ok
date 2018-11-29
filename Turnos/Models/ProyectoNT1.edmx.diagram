@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fe9d9618ee2c420b97854dfbfbc8a2e2" Name="Diagram1">
-        <EntityTypeShape EntityType="ProyectoNT1Model.obraSocial" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProyectoNT1Model.paciente" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProyectoNT1Model.profesional" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ProyectoNT1Model.turno" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
-        <AssociationConnector Association="ProyectoNT1Model.FK_paciente_obraSocial1" ManuallyRouted="false" />
-        <AssociationConnector Association="ProyectoNT1Model.FK_turno_paciente" ManuallyRouted="false" />
-        <AssociationConnector Association="ProyectoNT1Model.FK_turno_profesional1" ManuallyRouted="false" />
+      <Diagram DiagramId="fe9d9618ee2c420b97854dfbfbc8a2e2" Name="Diagram1" ZoomLevel="92">
+        <EntityTypeShape EntityType="ProyectoNT1Model.obraSocial" PointX="0.75" PointY="0.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoNT1Model.paciente" PointX="3.375" PointY="4.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoNT1Model.profesional" PointX="3.375" PointY="0.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProyectoNT1Model.turno" PointX="0.75" PointY="3.75" Width="1.5" IsExpanded="true" />
+        <AssociationConnector ManuallyRouted="false" Association="ProyectoNT1Model.FK_paciente_obraSocial1" />
+        <AssociationConnector ManuallyRouted="false" Association="ProyectoNT1Model.FK_turno_paciente" />
+        <AssociationConnector ManuallyRouted="false" Association="ProyectoNT1Model.FK_turno_profesional1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

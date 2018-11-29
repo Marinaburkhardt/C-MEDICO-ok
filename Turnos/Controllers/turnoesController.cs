@@ -40,7 +40,7 @@ namespace Turnos.Controllers
         public ActionResult Create()
         {
             ViewBag.idPaciente = new SelectList(db.pacientes, "idPaciente", "nombre");
-            ViewBag.idPaciente = new SelectList(db.profesionals, "idProfesional", "nombre");
+            ViewBag.idProfesional = new SelectList(db.profesionals, "idProfesional", "nombre");
             return View();
         }
 

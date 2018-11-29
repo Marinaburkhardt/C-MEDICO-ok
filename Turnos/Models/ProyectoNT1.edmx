@@ -9,33 +9,33 @@
           <Key>
             <PropertyRef Name="idObraSocial" />
           </Key>
-          <Property Name="idObraSocial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="idObraSocial" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+          <Property Name="nombre" Nullable="false" MaxLength="30" Type="varchar" />
         </EntityType>
         <EntityType Name="paciente">
           <Key>
             <PropertyRef Name="idPaciente" />
           </Key>
-          <Property Name="idPaciente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="apellido" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="dni" Type="numeric" Precision="8" Scale="0" Nullable="false" />
-          <Property Name="telefono" Type="numeric" Precision="18" Scale="0" />
-          <Property Name="mail" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="idObraSocial" Type="int" Nullable="false" />
-          <Property Name="sexo" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="idPaciente" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+          <Property Name="nombre" Nullable="false" MaxLength="30" Type="varchar" />
+          <Property Name="apellido" Nullable="false" MaxLength="30" Type="varchar" />
+          <Property Name="dni" Nullable="false" Precision="8" Scale="0" Type="numeric" />
+          <Property Name="telefono" Precision="18" Scale="0" Type="numeric" />
+          <Property Name="mail" Nullable="false" MaxLength="30" Type="varchar" />
+          <Property Name="idObraSocial" Nullable="false" Type="int" />
+          <Property Name="sexo" Nullable="false" MaxLength="30" Type="varchar" />
         </EntityType>
         <EntityType Name="profesional">
           <Key>
             <PropertyRef Name="idProfesional" />
           </Key>
-          <Property Name="idProfesional" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="apellido" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="dni" Type="numeric" Precision="8" Scale="0" Nullable="false" />
-          <Property Name="telefono" Type="numeric" Precision="18" Scale="0" />
-          <Property Name="mail" Type="varchar" MaxLength="30" Nullable="false" />
-          <Property Name="matricula" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="idProfesional" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+          <Property Name="nombre" Nullable="false" MaxLength="50" Type="varchar" />
+          <Property Name="apellido" Nullable="false" MaxLength="50" Type="varchar" />
+          <Property Name="dni" Nullable="false" Precision="8" Scale="0" Type="numeric" />
+          <Property Name="telefono" Precision="18" Scale="0" Type="numeric" />
+          <Property Name="mail" Nullable="false" MaxLength="30" Type="varchar" />
+          <Property Name="matricula" Nullable="false" MaxLength="15" Type="varchar" />
         </EntityType>
         <EntityType Name="turno">
           <Key>
@@ -43,13 +43,13 @@
             <PropertyRef Name="idProfesional" />
             <PropertyRef Name="fecha" />
           </Key>
-          <Property Name="idPaciente" Type="int" Nullable="false" />
-          <Property Name="idProfesional" Type="int" Nullable="false" />
-          <Property Name="fecha" Type="datetime" Nullable="false" />
+          <Property Name="idPaciente" Nullable="false" Type="int" />
+          <Property Name="idProfesional" Nullable="false" Type="int" />
+          <Property Name="fecha" Nullable="false" Type="datetime" />
         </EntityType>
         <Association Name="FK_paciente_obraSocial1">
-          <End Role="obraSocial" Type="Self.obraSocial" Multiplicity="1" />
-          <End Role="paciente" Type="Self.paciente" Multiplicity="*" />
+          <End Type="Self.obraSocial" Multiplicity="1" Role="obraSocial" />
+          <End Type="Self.paciente" Multiplicity="*" Role="paciente" />
           <ReferentialConstraint>
             <Principal Role="obraSocial">
               <PropertyRef Name="idObraSocial" />
@@ -60,8 +60,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_turno_paciente">
-          <End Role="paciente" Type="Self.paciente" Multiplicity="1" />
-          <End Role="turno" Type="Self.turno" Multiplicity="*" />
+          <End Type="Self.paciente" Multiplicity="1" Role="paciente" />
+          <End Type="Self.turno" Multiplicity="*" Role="turno" />
           <ReferentialConstraint>
             <Principal Role="paciente">
               <PropertyRef Name="idPaciente" />
@@ -72,8 +72,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_turno_profesional1">
-          <End Role="profesional" Type="Self.profesional" Multiplicity="1" />
-          <End Role="turno" Type="Self.turno" Multiplicity="*" />
+          <End Type="Self.profesional" Multiplicity="1" Role="profesional" />
+          <End Type="Self.turno" Multiplicity="*" Role="turno" />
           <ReferentialConstraint>
             <Principal Role="profesional">
               <PropertyRef Name="idProfesional" />
@@ -89,16 +89,16 @@
           <EntitySet Name="profesional" EntityType="Self.profesional" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="turno" EntityType="Self.turno" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_paciente_obraSocial1" Association="Self.FK_paciente_obraSocial1">
-            <End Role="obraSocial" EntitySet="obraSocial" />
-            <End Role="paciente" EntitySet="paciente" />
+            <End EntitySet="obraSocial" Role="obraSocial" />
+            <End EntitySet="paciente" Role="paciente" />
           </AssociationSet>
           <AssociationSet Name="FK_turno_paciente" Association="Self.FK_turno_paciente">
-            <End Role="paciente" EntitySet="paciente" />
-            <End Role="turno" EntitySet="turno" />
+            <End EntitySet="paciente" Role="paciente" />
+            <End EntitySet="turno" Role="turno" />
           </AssociationSet>
           <AssociationSet Name="FK_turno_profesional1" Association="Self.FK_turno_profesional1">
-            <End Role="profesional" EntitySet="profesional" />
-            <End Role="turno" EntitySet="turno" />
+            <End EntitySet="profesional" Role="profesional" />
+            <End EntitySet="turno" Role="turno" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -109,36 +109,36 @@
           <Key>
             <PropertyRef Name="idObraSocial" />
           </Key>
-          <Property Name="idObraSocial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idObraSocial" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="nombre" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
           <NavigationProperty Name="pacientes" Relationship="Self.FK_paciente_obraSocial1" FromRole="obraSocial" ToRole="paciente" />
         </EntityType>
         <EntityType Name="paciente">
           <Key>
             <PropertyRef Name="idPaciente" />
           </Key>
-          <Property Name="idPaciente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="apellido" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="dni" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
-          <Property Name="telefono" Type="Decimal" Precision="18" Scale="0" />
-          <Property Name="mail" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="idObraSocial" Type="Int32" Nullable="false" />
+          <Property Name="idPaciente" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="nombre" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="apellido" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="dni" Nullable="false" Precision="8" Scale="0" Type="Decimal" />
+          <Property Name="telefono" Precision="18" Scale="0" Type="Decimal" />
+          <Property Name="mail" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="idObraSocial" Nullable="false" Type="Int32" />
           <NavigationProperty Name="obraSocial" Relationship="Self.FK_paciente_obraSocial1" FromRole="paciente" ToRole="obraSocial" />
           <NavigationProperty Name="turnoes" Relationship="Self.FK_turno_paciente" FromRole="paciente" ToRole="turno" />
-          <Property Name="sexo" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="sexo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
         </EntityType>
         <EntityType Name="profesional">
           <Key>
             <PropertyRef Name="idProfesional" />
           </Key>
-          <Property Name="idProfesional" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="dni" Type="Decimal" Precision="8" Scale="0" Nullable="false" />
-          <Property Name="telefono" Type="Decimal" Precision="18" Scale="0" />
-          <Property Name="mail" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="matricula" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idProfesional" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <Property Name="nombre" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="apellido" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="dni" Nullable="false" Precision="8" Scale="0" Type="Decimal" />
+          <Property Name="telefono" Precision="18" Scale="0" Type="Decimal" />
+          <Property Name="mail" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="matricula" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
           <NavigationProperty Name="turnoes" Relationship="Self.FK_turno_profesional1" FromRole="profesional" ToRole="turno" />
         </EntityType>
         <EntityType Name="turno">
@@ -147,15 +147,15 @@
             <PropertyRef Name="idProfesional" />
             <PropertyRef Name="fecha" />
           </Key>
-          <Property Name="idPaciente" Type="Int32" Nullable="false" />
-          <Property Name="idProfesional" Type="Int32" Nullable="false" />
-          <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="idPaciente" Nullable="false" Type="Int32" />
+          <Property Name="idProfesional" Nullable="false" Type="Int32" />
+          <Property Name="fecha" Nullable="false" Precision="3" Type="DateTime" />
           <NavigationProperty Name="paciente" Relationship="Self.FK_turno_paciente" FromRole="turno" ToRole="paciente" />
           <NavigationProperty Name="profesional" Relationship="Self.FK_turno_profesional1" FromRole="turno" ToRole="profesional" />
         </EntityType>
         <Association Name="FK_paciente_obraSocial1">
-          <End Role="obraSocial" Type="Self.obraSocial" Multiplicity="1" />
-          <End Role="paciente" Type="Self.paciente" Multiplicity="*" />
+          <End Type="Self.obraSocial" Multiplicity="1" Role="obraSocial" />
+          <End Type="Self.paciente" Multiplicity="*" Role="paciente" />
           <ReferentialConstraint>
             <Principal Role="obraSocial">
               <PropertyRef Name="idObraSocial" />
@@ -166,8 +166,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_turno_paciente">
-          <End Role="paciente" Type="Self.paciente" Multiplicity="1" />
-          <End Role="turno" Type="Self.turno" Multiplicity="*" />
+          <End Type="Self.paciente" Multiplicity="1" Role="paciente" />
+          <End Type="Self.turno" Multiplicity="*" Role="turno" />
           <ReferentialConstraint>
             <Principal Role="paciente">
               <PropertyRef Name="idPaciente" />
@@ -178,8 +178,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_turno_profesional1">
-          <End Role="profesional" Type="Self.profesional" Multiplicity="1" />
-          <End Role="turno" Type="Self.turno" Multiplicity="*" />
+          <End Type="Self.profesional" Multiplicity="1" Role="profesional" />
+          <End Type="Self.turno" Multiplicity="*" Role="turno" />
           <ReferentialConstraint>
             <Principal Role="profesional">
               <PropertyRef Name="idProfesional" />
@@ -195,16 +195,16 @@
           <EntitySet Name="profesionals" EntityType="Self.profesional" />
           <EntitySet Name="turnoes" EntityType="Self.turno" />
           <AssociationSet Name="FK_paciente_obraSocial1" Association="Self.FK_paciente_obraSocial1">
-            <End Role="obraSocial" EntitySet="obraSocials" />
-            <End Role="paciente" EntitySet="pacientes" />
+            <End EntitySet="obraSocials" Role="obraSocial" />
+            <End EntitySet="pacientes" Role="paciente" />
           </AssociationSet>
           <AssociationSet Name="FK_turno_paciente" Association="Self.FK_turno_paciente">
-            <End Role="paciente" EntitySet="pacientes" />
-            <End Role="turno" EntitySet="turnoes" />
+            <End EntitySet="pacientes" Role="paciente" />
+            <End EntitySet="turnoes" Role="turno" />
           </AssociationSet>
           <AssociationSet Name="FK_turno_profesional1" Association="Self.FK_turno_profesional1">
-            <End Role="profesional" EntitySet="profesionals" />
-            <End Role="turno" EntitySet="turnoes" />
+            <End EntitySet="profesionals" Role="profesional" />
+            <End EntitySet="turnoes" Role="turno" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
