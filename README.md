@@ -16,3 +16,9 @@ Funcionalidad de la aplicación y priorización de funcionalidades:
 3.	Alta / baja / modificación/consulta de un turno
 4.	Visualización de agenda
 
+
+---------------
+Información de utilidad:
+
+- La documentación del proyecto se encuentra en la carpeta "Doumentación"
+- Para correr el proyecto ejecute antes la query "DB-Query.sql" en SQL-Server. Luego elimine la carpeta ".vs" y ejecute la solucion "Turnos.sln"
