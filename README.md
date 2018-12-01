@@ -22,3 +22,4 @@ Información de utilidad:
 
 - La documentación del proyecto se encuentra en la carpeta "Doumentación"
 - Para correr el proyecto ejecute antes la query "DB-Query.sql" en SQL-Server. Luego elimine la carpeta ".vs" y ejecute la solucion "Turnos.sln"
+- Una vez abierta la solución, modificar del archivo "Web.config" --> data source=MARI\SQLEXPRESS --> por la conexión a la base correspondiente. Lo mismo debe ser modificado en dos lugares de ese archivo, recomendamos reemplazar en todo el archivo
