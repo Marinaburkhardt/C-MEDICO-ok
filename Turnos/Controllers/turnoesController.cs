@@ -42,9 +42,14 @@ namespace Turnos.Controllers
             ViewBag.Fechas = new List<String>();
             ViewBag.idPaciente = new SelectList(db.pacientes, "idPaciente", "nombre");
             ViewBag.idProfesional = new SelectList(db.profesionals, "idProfesional", "nombre");
-            ViewBag.Fechas.Add("2018-12-08");
+            /*ViewBag.Fechas.Add("2018-12-08");
             ViewBag.Fechas.Add("2018-12-25");
-            ViewBag.Fechas.Add("2018-12-31");
+            ViewBag.Fechas.Add("2018-12-31");*/
+            
+            foreach (var item in db.turnoes.Where(x => x.idProfesional.Equals(8)).ToList())
+            {
+                ViewBag.Fechas.Add(item.fecha.ToString("yyyy-MM-dd"));
+            }
             return View();
         }
 

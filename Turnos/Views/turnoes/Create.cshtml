@@ -65,7 +65,6 @@
                             var feriados = getFeriados();
                             function getFeriados() {
                                 var myArray = [];
-
                                 @foreach (var d in @ViewBag.Fechas)
                                 {
                                     @:myArray.push("@d");
