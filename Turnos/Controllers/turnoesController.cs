@@ -39,8 +39,12 @@ namespace Turnos.Controllers
         // GET: turnoes/Create
         public ActionResult Create()
         {
+            ViewBag.Fechas = new List<String>();
             ViewBag.idPaciente = new SelectList(db.pacientes, "idPaciente", "nombre");
             ViewBag.idProfesional = new SelectList(db.profesionals, "idProfesional", "nombre");
+            ViewBag.Fechas.Add("2018-12-08");
+            ViewBag.Fechas.Add("2018-12-25");
+            ViewBag.Fechas.Add("2018-12-31");
             return View();
         }
 
