@@ -80,7 +80,7 @@
                                         return [true, "marcarDiaRojo"];
                                     }
                                     else {
-                                        var formattedDate = jQuery.datepicker.formatDate('yy-mm-dd', date)
+                                        var formattedDate = jQuery.datepicker.formatDate('YYYY-MM-DD', date)
                                         return [true, (feriados.indexOf(formattedDate) == -1) ? "marcarDiaVerde" : "marcarDiaRojo"];
                                     }
                                 }

@@ -23,8 +23,8 @@ namespace Turnos.Models
         public int idProfesional { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
-        public decimal dni { get; set; }
-        public Nullable<decimal> telefono { get; set; }
+        public int dni { get; set; }
+        public Nullable<int> telefono { get; set; }
         public string mail { get; set; }
         public string matricula { get; set; }
     

@@ -45,10 +45,10 @@ namespace Turnos.Controllers
             /*ViewBag.Fechas.Add("2018-12-08");
             ViewBag.Fechas.Add("2018-12-25");
             ViewBag.Fechas.Add("2018-12-31");*/
-            
-            foreach (var item in db.turnoes.Where(x => x.idProfesional.Equals(8)).ToList())
+
+            foreach (var item in db.turnoes.Where(x => x.idProfesional.Equals(7)).ToList())
             {
-                ViewBag.Fechas.Add(item.fecha.ToString("yyyy-MM-dd"));
+                ViewBag.Fechas.Add(item.fecha.ToString());
             }
             return View();
         }

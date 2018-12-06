@@ -15,8 +15,8 @@
     <Property Name="idPaciente" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
     <Property Name="nombre" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
     <Property Name="apellido" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
-    <Property Name="dni" Nullable="false" Precision="8" Scale="0" Type="Decimal" />
-    <Property Name="telefono" Precision="18" Scale="0" Type="Decimal" />
+    <Property Name="dni" Nullable="false" Type="Int32" />
+    <Property Name="telefono" Type="Int32" />
     <Property Name="mail" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
     <Property Name="idObraSocial" Nullable="false" Type="Int32" />
     <NavigationProperty Name="obraSocial" Relationship="Self.FK_paciente_obraSocial1" FromRole="paciente" ToRole="obraSocial" />
@@ -30,8 +30,8 @@
     <Property Name="idProfesional" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
     <Property Name="nombre" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
     <Property Name="apellido" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-    <Property Name="dni" Nullable="false" Precision="8" Scale="0" Type="Decimal" />
-    <Property Name="telefono" Precision="18" Scale="0" Type="Decimal" />
+    <Property Name="dni" Nullable="false" Type="Int32" />
+    <Property Name="telefono" Type="Int32" />
     <Property Name="mail" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
     <Property Name="matricula" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
     <NavigationProperty Name="turnoes" Relationship="Self.FK_turno_profesional1" FromRole="profesional" ToRole="turno" />
