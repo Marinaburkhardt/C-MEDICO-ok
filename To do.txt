@@ -2,5 +2,3 @@ Cosas para acomodar/arreglar
 
 - x alguna razon vs no toma las expresiones regulares para definir solo letras (nombre, apellido...)
 - x alguna razon vs no toma las expresiones regulares para delimitar el max/min del largo del input, ni tampoco funciona max-minlenght
-- arreglar los decimales en los campos de dni
-- arreglar los decimales en los campos de teléfono
