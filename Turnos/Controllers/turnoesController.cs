@@ -56,7 +56,11 @@ namespace Turnos.Controllers
             ViewBag.Fechas = new List<String>();
             ViewBag.idPaciente = new SelectList(db.pacientes, "idPaciente", "nombre");
             ViewBag.idProfesional = new SelectList(db.profesionals, "idProfesional", "nombre");
-            
+            /*ViewBag.Fechas.Add("2018-12-08");
+            ViewBag.Fechas.Add("2018-12-25");
+            ViewBag.Fechas.Add("2018-12-31");*/
+
+
             return View();
         }
         public ActionResult UpdateDatePicker()
@@ -85,6 +89,7 @@ namespace Turnos.Controllers
 
             return View(turno);
         }
+
 
 
         // GET: turnoes/Edit/5
@@ -117,7 +122,6 @@ namespace Turnos.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
             ViewBag.idPaciente = new SelectList(db.pacientes, "idPaciente", "nombre", turno.idPaciente);
             ViewBag.idPaciente = new SelectList(db.profesionals, "idProfesional", "nombre", turno.idPaciente);
             return View(turno);
