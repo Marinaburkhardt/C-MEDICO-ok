@@ -56,6 +56,7 @@
                                 data: JSON.stringify({ idProfesional: +idProfesional }),
                                 success: function (result) {
                                     fechas = [];
+                                    debugger;
                                     $.each($.parseJSON(result), function (i, fecha) {
                                         fechas.push(fecha);
                                     })
@@ -89,23 +90,29 @@
                     <script type="text/javascript">
                         var fechas = [];
                         $(document).ready(function () {
-                            var myArray = [];
-                            function getFeriados() {
 
-                                return fechas;
-                            }
 
-                            $("#datepicker").datepicker({
+
+
+                            $("#fecha").datepicker({
                                 minDate: 0,
+
                                 beforeShowDay: function (date) {
                                     var dia = date.getDay();
-                                    var feriados = getFeriados();
-                                    if (dia == 0) {
-                                        return [true, "marcarDiaRojo"];
+                                    var feriados = fechas;
+                                    if (dia == 0 || dia == 6) {
+                                        return [false, "marcarDiaRojo"];
                                     }
                                     else {
-                                        var formattedDate = jQuery.datepicker.formatDate('yy-mm-dd', date)
-                                        return [true, (feriados.indexOf(formattedDate) == -1) ? "marcarDiaVerde" : "marcarDiaRojo"];
+                                        var formattedDate = jQuery.datepicker.formatDate('dd-mm-yy', date)
+
+                                        if (feriados.indexOf(formattedDate) == -1) {
+                                            return [true, "marcarDiaVerde"];
+                                        }
+                                        else {
+                                            return [false, "marcarDiaRojo"];
+                                        }
+
                                     }
                                 }
 
@@ -113,7 +120,8 @@
 
                         });
                     </script>
-                    <p>Día y horario*</p><input type="text" id="datepicker">
+                    <p>Día y horario*</p>
+                    @Html.TextBoxFor(model => model.fecha, new { @class = "fecha" })
                     @Html.ValidationMessageFor(model => model.fecha, "", new { @class = "text-danger" })
                 </div>
             </div>

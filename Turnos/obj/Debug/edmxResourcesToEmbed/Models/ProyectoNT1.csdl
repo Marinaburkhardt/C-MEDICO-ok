@@ -21,7 +21,7 @@
     <Property Name="idObraSocial" Nullable="false" Type="Int32" />
     <NavigationProperty Name="obraSocial" Relationship="Self.FK_paciente_obraSocial1" FromRole="paciente" ToRole="obraSocial" />
     <NavigationProperty Name="turnoes" Relationship="Self.FK_turno_paciente" FromRole="paciente" ToRole="turno" />
-    <Property Name="sexo" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="sexo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
   </EntityType>
   <EntityType Name="profesional">
     <Key>
@@ -38,15 +38,14 @@
   </EntityType>
   <EntityType Name="turno">
     <Key>
-      <PropertyRef Name="idPaciente" />
-      <PropertyRef Name="idProfesional" />
-      <PropertyRef Name="fecha" />
+      <PropertyRef Name="idTurno" />
     </Key>
     <Property Name="idPaciente" Nullable="false" Type="Int32" />
     <Property Name="idProfesional" Nullable="false" Type="Int32" />
-    <Property Name="fecha" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="fecha" Nullable="false" Precision="7" Type="DateTime" />
     <NavigationProperty Name="paciente" Relationship="Self.FK_turno_paciente" FromRole="turno" ToRole="paciente" />
     <NavigationProperty Name="profesional" Relationship="Self.FK_turno_profesional1" FromRole="turno" ToRole="profesional" />
+    <Property Name="idTurno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <Association Name="FK_paciente_obraSocial1">
     <End Type="Self.obraSocial" Multiplicity="1" Role="obraSocial" />

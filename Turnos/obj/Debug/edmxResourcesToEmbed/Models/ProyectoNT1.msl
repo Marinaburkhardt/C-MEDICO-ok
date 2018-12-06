@@ -39,6 +39,7 @@
     <EntitySetMapping Name="turnoes">
       <EntityTypeMapping TypeName="ProyectoNT1Model.turno">
         <MappingFragment StoreEntitySet="turno">
+          <ScalarProperty Name="idTurno" ColumnName="idTurno" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
           <ScalarProperty Name="idProfesional" ColumnName="idProfesional" />
           <ScalarProperty Name="fecha" ColumnName="fecha" />

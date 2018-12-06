@@ -17,6 +17,7 @@ namespace Turnos.Models
         public int idPaciente { get; set; }
         public int idProfesional { get; set; }
         public System.DateTime fecha { get; set; }
+        public int idTurno { get; set; }
     
         public virtual paciente paciente { get; set; }
         public virtual profesional profesional { get; set; }

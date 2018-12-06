@@ -1,45 +1,142 @@
 ﻿@model Turnos.Models.turno
-
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Edit</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="~/Content/estilos.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
 <body>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
-    
-    
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
-        
-        <div class="form-horizontal">
-            <h4>turno</h4>
-            <hr />
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            @Html.HiddenFor(model => model.idPaciente)
-    
-            @Html.HiddenFor(model => model.idProfesional)
-    
-            @Html.HiddenFor(model => model.fecha)
-    
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Save" class="btn btn-default" />
+
+        <div class="container">
+            <div class="Titulo">Editar Turno</div>
+            <div class="form-group row">
+                <div class="col-12 col-md-6 mb-3">
+                    Paciente*
+                    <!-- Campo obligatorio -->
+                    @Html.DisplayNameFor(model => model.paciente.nombre)
+                    @Html.ValidationMessageFor(model => model.idPaciente, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    Profesional*
+                    <!-- Campo obligatorio -->
+                    @Html.DisplayNameFor(model => model.profesional.nombre)
+                    @Html.ValidationMessageFor(model => model.idProfesional, "", new { @class = "text-danger" })
+
+
+                </div>
+            </div>
+            <div class="form-group row text-center">
+                <div class="col-12">
+                    <!-- Campo obligatorio -->
+                    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                    <script>
+
+                        function getTurnosListas() {
+                            var idProfesional = $("#idProfesional").val();
+                            $.ajax({
+                                url: '/turnoes/GetFechasByProfesional',
+                                type: 'POST',
+                                datatype: 'application/json',
+                                contentType: 'application/json',
+                                data: JSON.stringify({ idProfesional: +idProfesional }),
+                                success: function (result) {
+                                    fechas = [];
+                                    $.each($.parseJSON(result), function (i, fecha) {
+                                        fechas.push(fecha);
+                                    })
+
+                                },
+                                error: function () { alert("Error!!") },
+                            });
+
+                        }
+
+
+
+                    </script>
+                    <style>
+                        .marcarDiaRojo .ui-state-default {
+                            color: red;
+                        }
+
+                        .marcarDiaVerde .ui-state-default {
+                            color: green;
+                        }
+
+                        .marcarDiaAmarillo .ui-state-default {
+                            color: yellow;
+                        }
+
+                        .ui-datepicker-week-end a {
+                            color: red !important;
+                        }
+                    </style>
+                    <script type="text/javascript">
+                        var fechas = [];
+                        $(document).ready(function () {
+                            var myArray = [];
+                            function getFeriados() {
+
+                                return fechas;
+                            }
+
+                            $("#datepicker").datepicker({
+                                minDate: 0,
+                                beforeShowDay: function (date) {
+                                    var dia = date.getDay();
+                                    var feriados = getFeriados();
+                                    if (dia == 0) {
+                                        return [true, "marcarDiaRojo"];
+                                    }
+                                    else {
+                                        var formattedDate = jQuery.datepicker.formatDate('yy-mm-dd', date)
+                                        return [true, (feriados.indexOf(formattedDate) == -1) ? "marcarDiaVerde" : "marcarDiaRojo"];
+                                    }
+                                }
+
+                            });
+
+                        });
+                    </script>
+                    <p>Día y horario*</p><input type="text" id="datepicker">
+                    @Html.ValidationMessageFor(model => model.fecha, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="form-group row">
+                <div class="col-12 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-9 col-md-4">
+                            <button class="btn btn-primary btn-block" type="submit">Guardar</button>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-2">
+                            <input class="btn btn-grey btn-block" type="button" name="cancel" value="Cancel" onClick="window.location='/turnoes';" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     }
-    
-    <div>
-        @Html.ActionLink("Back to List", "Index")
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- <script src="../js/bootstrap.min.js"></script> -->
 </body>
 </html>
