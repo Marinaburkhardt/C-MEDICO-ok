@@ -11,12 +11,15 @@ namespace Turnos.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
     public partial class turno
     {
         public int idPaciente { get; set; }
         public int idProfesional { get; set; }
-        public System.DateTime fecha { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}")]
+        public DateTime fecha { get; set; }
         public int idTurno { get; set; }
     
         public virtual paciente paciente { get; set; }

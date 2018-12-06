@@ -38,8 +38,8 @@
     </Key>
     <Property Name="idPaciente" Type="int" Nullable="false" />
     <Property Name="idProfesional" Type="int" Nullable="false" />
-    <Property Name="fecha" Type="datetime2" Precision="7" Nullable="false" />
-    <Property Name="idTurno" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="idTurno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <Association Name="FK_paciente_obraSocial1">
     <End Role="obraSocial" Type="Self.obraSocial" Multiplicity="1" />

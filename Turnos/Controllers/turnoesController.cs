@@ -114,10 +114,11 @@ namespace Turnos.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "idPaciente,idProfesional,fecha")] turno turno)
+        public ActionResult Edit([Bind(Include = "idPaciente,idProfesional,fecha,idTurno")] turno turno)
         {
             if (ModelState.IsValid)
             {
+       
                 db.Entry(turno).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
