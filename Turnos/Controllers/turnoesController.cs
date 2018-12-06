@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using Turnos.Models;
 
 namespace Turnos.Controllers
@@ -19,6 +20,19 @@ namespace Turnos.Controllers
         {
             var turnoes = db.turnoes.Include(t => t.paciente).Include(t => t.profesional);
             return View(turnoes.ToList());
+        }
+        [HttpPost]
+        public ActionResult GetFechasByProfesional(int idProfesional)
+        {
+            ViewBag.Fechas = new List<String>();
+            foreach (var item in db.turnoes.Where(x => x.idProfesional.Equals(idProfesional)).ToList())
+            {
+                ViewBag.Fechas.Add(item.fecha.ToString("yyyy-MM-dd"));
+            }
+            //return View(ViewBag.Fechas);
+            JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
+            string result = javaScriptSerializer.Serialize(ViewBag.Fechas);
+            return Json(result, JsonRequestBehavior.AllowGet);
         }
 
         // GET: turnoes/Details/5
@@ -46,12 +60,15 @@ namespace Turnos.Controllers
             ViewBag.Fechas.Add("2018-12-25");
             ViewBag.Fechas.Add("2018-12-31");*/
 
-            foreach (var item in db.turnoes.Where(x => x.idProfesional.Equals(7)).ToList())
-            {
-                ViewBag.Fechas.Add(item.fecha.ToString());
-            }
+
             return View();
         }
+        public ActionResult UpdateDatePicker()
+        {
+            return View();
+
+        }
+
 
         // POST: turnoes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
@@ -69,10 +86,11 @@ namespace Turnos.Controllers
 
             ViewBag.Pacientes = new SelectList(db.pacientes, "idPaciente", "nombre", turno.idPaciente).AsEnumerable<SelectListItem>();
             ViewBag.Profesionales = new SelectList(db.profesionals, "idProfesional", "nombre", turno.idProfesional).AsEnumerable<SelectListItem>();
+
             return View(turno);
         }
 
-        
+
 
         // GET: turnoes/Edit/5
         public ActionResult Edit(int? id)

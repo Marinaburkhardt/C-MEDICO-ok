@@ -33,8 +33,10 @@
                 <div class="col-12 col-md-6 mb-3">
                     Profesional*
                     <!-- Campo obligatorio -->
-                    @Html.DropDownList("idProfesional", (IEnumerable<SelectListItem>)ViewBag.Profesionales, htmlAttributes: new { @class = "form-control" })
+                    @Html.DropDownList("idProfesional", (IEnumerable<SelectListItem>)ViewBag.Profesionales, htmlAttributes: new { @class = "form-control", @onchange = "getTurnosListas();" })
                     @Html.ValidationMessageFor(model => model.idProfesional, "", new { @class = "text-danger" })
+
+
                 </div>
             </div>
             <div class="form-group row text-center">
@@ -42,8 +44,32 @@
                     <!-- Campo obligatorio -->
                     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
                     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                    <style>
+                    <script>
 
+                        function getTurnosListas() {
+                            var idProfesional = $("#idProfesional").val();
+                            $.ajax({
+                                url: '/turnoes/GetFechasByProfesional',
+                                type: 'POST',
+                                datatype: 'application/json',
+                                contentType: 'application/json',
+                                data: JSON.stringify({ idProfesional: +idProfesional }),
+                                success: function (result) {
+                                    fechas = [];
+                                    $.each($.parseJSON(result), function (i, fecha) {
+                                        fechas.push(fecha);
+                                    })
+
+                                },
+                                error: function () { alert("Error!!") },
+                            });
+
+                        }
+
+
+
+                    </script>
+                    <style>
                         .marcarDiaRojo .ui-state-default {
                             color: red;
                         }
@@ -60,30 +86,29 @@
                             color: red !important;
                         }
                     </style>
-                    <script>
+                    <script type="text/javascript">
+                        var fechas = [];
                         $(document).ready(function () {
-                            var feriados = getFeriados();
+                            var myArray = [];
                             function getFeriados() {
-                                var myArray = [];
-                                @foreach (var d in @ViewBag.Fechas)
-                                {
-                                    @:myArray.push("@d");
-                                }
-                                return myArray;
+
+                                return fechas;
                             }
+
                             $("#datepicker").datepicker({
                                 minDate: 0,
                                 beforeShowDay: function (date) {
                                     var dia = date.getDay();
-
+                                    var feriados = getFeriados();
                                     if (dia == 0) {
                                         return [true, "marcarDiaRojo"];
                                     }
                                     else {
-                                        var formattedDate = jQuery.datepicker.formatDate('YYYY-MM-DD', date)
+                                        var formattedDate = jQuery.datepicker.formatDate('yy-mm-dd', date)
                                         return [true, (feriados.indexOf(formattedDate) == -1) ? "marcarDiaVerde" : "marcarDiaRojo"];
                                     }
                                 }
+
                             });
 
                         });

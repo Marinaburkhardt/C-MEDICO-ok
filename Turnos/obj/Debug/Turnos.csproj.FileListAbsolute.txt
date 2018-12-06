@@ -315,3 +315,4 @@ C:\Users\Marina Burkhardt\GIT\C-MEDICO-ok\Turnos\obj\Debug\Turnos.csproj.CoreCom
 C:\Users\Marina Burkhardt\GIT\C-MEDICO-ok\Turnos\obj\Debug\Turnos.csproj.CopyComplete
 C:\Users\Marina Burkhardt\GIT\C-MEDICO-ok\Turnos\obj\Debug\Turnos.dll
 C:\Users\Marina Burkhardt\GIT\C-MEDICO-ok\Turnos\obj\Debug\Turnos.pdb
+C:\Users\Marina Burkhardt\GIT\C-MEDICO-ok\Turnos\obj\Debug\Turnos.csprojAssemblyReference.cache
